@@ -59,8 +59,18 @@ const Home: NextPage<HomeProps> = (props: Partial<HomeProps>) => {
               onChange={(e) => handleForm("password", e.target.value)}
             />
 
-            <button type="submit">Login Now</button>
+            <button
+              className="bg-gray-300 hover:bg-gray-400"
+              type="submit"
+            >
+                Login Now
+              </button>
           </form>
+
+          <div className="flex items-center justify-between mt-10">
+            <p>username: lahipa</p>
+            <p>password: 123456</p>
+          </div>
         </div>
       </main>
     </div>
